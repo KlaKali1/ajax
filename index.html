@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="RWD template">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Klaudia Kalinowska">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RWD template | modified by Klaudia Kalinowska</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <style></style>
+    
+</head>
+
+<body>
+	<div id="container">
+	   <header class="main-header">
+           <img id="logo" src="images/logo.png" alt="Responsive Design" />
+           <nav class="main-nav">
+               <ul>
+				    <li><a class="active" href="#">Home</a></li>
+				    <li><a href="#">Learn</a></li>
+				    <li><a href="#">Brainstorm</a></li>
+				    <li><a href="#">Create</a></li>
+				    <li><a href="#">Collaborate</a></li>
+				    <li><a href="#">Teach</a></li>
+               </ul>
+		  </nav><!--End of nav-->
+	   </header><!--End of header-->
+	<div id="main">
+		<div id="content">
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">First Post</a></h2>
+					<span>Modified by: Klaudia Kalinowska on April 22, 2017</span>
+				</header><!-- End of art-header-->
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu est, lacinia et nisi nec, vehicula pretium magna. Nulla ut nisl vel lorem posuere aliquam a feugiat sapien. Suspendisse tincidunt mauris at consequat ornare. Donec condimentum consequat felis a sodales. Donec vestibulum imperdiet nisl id vulputate.   </p>
+					<p>Aenean in tellus ut nibh dignissim adipiscing nec eget libero. Donec eu diam quam. Sed fermentum elementum ultrices. Aliquam erat volutpat. Integer sollicitudin lacus quis est elementum tincidunt. Praesent mattis, felis a hendrerit tempus, risus orci mollis massa, a porta lorem libero id purus.  </p>
+					<a class="readmore" href="#">Read more</a>
+			</article><!-- End of art1-->
+			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">Check this out - AJAX!</a></h2>
+					<span>Created by: Where is Wally on April 23, 2017</span>
+				</header><!--End of header-->
+					<p>In in rutrum sapien. Ut tellus nibh, facilisis faucibus pulvinar vitae, sagittis at orci. In sem tellus, faucibus non eros sit amet, tincidunt dictum ligula. Fusce ornare sodales nisi, non aliquet lacus rutrum in. Vestibulum in sem urna. Cras commodo massa enim, non hendrerit lacus pretium vel. </p>
+					<p id="change1">Do you want to know...?</p>
+					<div onclick="readMore()">
+                        <a class="readmore" href="#">AJAX click</a>
+                    </div>
+				</article><!-- End of art1-->
+            			<article class="art1">
+				<header class="art-header">
+					<h2 class="title"><a href="#">Type in an address below and find relevant Wikipedia articles here</a></h2>
+				</header><!--End of header-->
+                            
+                <form id="form-container" class="form-container">
+                    <label for="street">Street: </label><input type="text" id="street" value="">
+                    <label for="city">City: </label><input type="text" id="city" value="">
+                    <div onclick="loadData()">
+                    <a class="readmore2" href="#">Click - API!</a>
+                    </div>
+                </form> 
+                            
+                <div class="wikipedia-container">
+                    <ul id="wikipedia-links"></ul>
+                </div>		
+				</article><!-- End of art1-->
+            
+            <div id="signIn">
+                <h2 class="title"><a href="#">Newsletter - Sign in!</a></h2>
+                <form id="test" form name="myForm" action="/action_page_post.php" onsubmit="return validateForm()" method="post">
+                
+                    <input type="text" name="name" placeholder="Twoje imię">
+                    <input type="text" name="name" placeholder="E-mail">
+                    <div onclick="loadDoc()">
+                    <a class="readmore2" href="#">Click - API!</a>
+                    </div>          
+            </form>
+            </div>
+		</div><!-- End of content-->
+		<aside id="sidebar">
+			<div class="block">
+				<h2>Top Sidebar</h2>
+				<p>
+					Donec eu diam quam sed fermentum elementum ultrices aliquam erat volutpat. In gravida nunc a metus sodales egestas. Morbi aliquet metus ultricies cursus elementum. 
+				</p>
+			</div><!-- End of side1-->
+			<div class="block">
+				<h2>Mid Sidebar</h2>
+				<p>
+					Vivamus arcu est quam sed fermentum elementum ultrices aliquam erat volutpat. Vestibulum dolor dolor, tincidunt vitae augue semper, semper gravida neque pellentesque eleifend.
+				</p>
+			</div><!-- End of side2-->
+			<div class="block">
+				<h2>Bottom Sidebar</h2>
+				<p>
+					Lorem ipsum dolor sit amet quam sed fermentum elementum ultrices aliquam erat volutpat. Proin porta ornare libero, eu aliquet tortor vestibulum sed. Ultrices aliquam erat volutpat. Proin porta ornare libero, eu aliquet tortor vestibulum sed. Ultrices aliquam erat volutpat. Proin porta ornare libero, eu aliquet tortor vestibulum sed. 
+			</div><!-- End of side3-->
+		</aside>
+	</div><!-- End of main-->
+	<div class="clr"></div>
+	<footer>
+		<p>Copyright &copy; 2017 - Resproject</p>
+	</footer>
+	</div><!--End of Container-->
+    
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
