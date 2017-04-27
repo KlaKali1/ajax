@@ -57,7 +57,7 @@ function loadDoc() {
   };
   xhttp.open("GET", "ajax_info.txt", true);
   xhttp.send();
-}
+};
 
 function readMore() {
     event.preventDefault();
@@ -71,4 +71,4 @@ function readMore() {
   };
   xhttp.open("GET", "read_info.txt", true);
   xhttp.send();
-}
+};
